@@ -4,7 +4,7 @@
 
 USBNSWA (USB Nintendo Switch Web App) turns a large tablet or any device with a
 Web browser into a USB Nintendo Switch gamepad. Anyone having difficulties
-using a joycons or regular gamepad may find a touchscreen gamepad easier to
+using joycons or a regular gamepad may find a touchscreen gamepad easier to
 use.
 
 ![System Block Diagram](./images/usbnswa_system.jpg)
