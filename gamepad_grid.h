@@ -37,6 +37,9 @@ typedef struct {
 #define NSRightStick_Down   NSRightStick_Up+1
 #define NSRightStick_Left   NSRightStick_Down+1
 #define NSRightStick_Right  NSRightStick_Left+1
+#define NSLeftStick_Up_Walk NSRightStick_Right+1
+#define NSLeftStick_Up_Lock NSLeftStick_Up_Walk+1
+#define NSLeftStick_Up_Lock_Walk NSLeftStick_Up_Lock+1
 
 const Key_Code_t Key_Codes[] = {
   {"ArrowUp", NSRightStick_Up},
@@ -66,8 +69,8 @@ const Touch_Cell_t Gamepad_Cells[MAX_ROWS][MAX_COLS] = {
     // Row 1
     {
         {"ZL", "", NSButton_LeftThrottle},
-        {"", "", 255},
-        {"", "", 255},
+        {"<b>&uarr;</b>Lock<br>Run", "", NSLeftStick_Up_Lock},
+        {"<b>&uarr;</b>Lock<br>Walk", "", NSLeftStick_Up_Lock_Walk},
         {"<b>&larr;</b>", "", NSDPad_Left},
         {"<b>&darr;</b>", "", NSDPad_Down},
         {"<b>&rarr;</b>", "", NSDPad_Right},
@@ -79,8 +82,8 @@ const Touch_Cell_t Gamepad_Cells[MAX_ROWS][MAX_COLS] = {
     // Row 2
     {
         {"L", "", NSButton_LeftTrigger},
-        {"<b>&uarr;</b><br>w", "", NSLeftStick_Up},
-        {"", "", 255},
+        {"<b>&uarr;</b><br>Run<br>w", "", NSLeftStick_Up},
+        {"<b>&uarr;</b><br>Walk", "", NSLeftStick_Up_Walk},
         {"<b>-</b>", "", NSButton_Minus},
         {"Capture", "", NSButton_Capture},
         {"Home", "", NSButton_Home},

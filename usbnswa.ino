@@ -128,8 +128,15 @@ void control_down(const int control) {
       Gamepad.dPad(dpad_up, dpad_down, dpad_left, dpad_right);
       break;
 
+    case NSLeftStick_Up_Lock:
+      /* fall through */
     case NSLeftStick_Up:
       Gamepad.leftYAxis(0);
+      break;
+    case NSLeftStick_Up_Lock_Walk:
+      /* fall through */
+    case NSLeftStick_Up_Walk:
+      Gamepad.leftYAxis(64);
       break;
     case NSLeftStick_Down:
       Gamepad.leftYAxis(255);
@@ -180,6 +187,8 @@ void control_up(const int control) {
       break;
 
     case NSLeftStick_Up:
+      /* fall through */
+    case NSLeftStick_Up_Walk:
       /* fall through */
     case NSLeftStick_Down:
       Gamepad.leftYAxis(128);
