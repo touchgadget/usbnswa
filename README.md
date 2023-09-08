@@ -149,6 +149,7 @@ document.addEventListener('keyup', function(event) {
 
 ## Related Project
 
-USBKWA USB keyboard Web App is similar but for USB keyboard instead of USB
-gamepad. This may be useful as a general purpose keyboard or for PC gaming.
-USBKWA works with various ESP32-S3 boards without displays.
+[USBKWA](https://github.com/touchgadget/usbkwa) USB keyboard Web App is similar
+but for USB keyboard instead of USB gamepad. This may be useful as a general
+purpose keyboard or for PC gaming. USBKWA works with various ESP32-S3 boards
+without displays.
